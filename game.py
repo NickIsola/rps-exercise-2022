@@ -1,17 +1,22 @@
-#Import necessary packages
+#IMPORT PACKAGES
 import random  
+import os
 
-#Intro
+# ALLOWS FOR A USER NAME
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One")
+
+#INTRO
 
 print("-------------------")
-print("Hi 'Player One' Welcome to my Rock-Paper_Scissors game...")
+print("Hi",PLAYER_NAME +"!", "Welcome to my Rock-Paper-Scissors game...")
 print("-------------------")
+
 # ASK FOR USER INPUT
 print("Here are your play options \n 1 (rock) \n 2 (paper) \n 3 (scissors)")
 user_choice = input ("Please select a number corresponding to your desired play: ")
-# user_choice = input("Please choose either: 'rock', 'paper', 'scissors': ")
+    # user_choice = input("Please choose either: 'rock', 'paper', 'scissors': ")
 
-# VALIDATE USER INPUT
+# VALIDATE USER INPUT 
 
 if (user_choice != "1" and user_choice != "2" and user_choice != "3"):
     print("Whoops! That is not a valid play. Please try again.")
@@ -26,13 +31,13 @@ else:
     user_choice = "scissors"
     print("You chose: scissors")
 
-# if (user_choice == "rock" or user_choice == "ROCK" or user_choice =="Rock" 
-# or user_choice == "paper" or user_choice == "PAPER" or user_choice =="Paper"
-# or user_choice == "scissors" or user_choice == "SCISSORS" or user_choice =="Scissors"): 
-#     print("You chose:",user_choice)
-# else:
-#     print("Whoops! That is not a valid play. Please check your spelling and try again.")
-#     exit()
+    # if (user_choice == "rock" or user_choice == "ROCK" or user_choice =="Rock" 
+    # or user_choice == "paper" or user_choice == "PAPER" or user_choice =="Paper"
+    # or user_choice == "scissors" or user_choice == "SCISSORS" or user_choice =="Scissors"): 
+    #     print("You chose:",user_choice)
+    # else:
+    #     print("Whoops! That is not a valid play. Please check your spelling and try again.")
+    #     exit()
 
 # COMPUTER CHOICE
 
@@ -64,4 +69,3 @@ elif user_choice == "paper":
 # FAREWELL
 print("-------------------")
 print("Thanks for playing. Please play again soon!")
-
