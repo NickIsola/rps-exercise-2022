@@ -1,10 +1,9 @@
 # "game.py" FILE
 
-# ...
+# "determine_winner" function defintion
 def determine_winner(user_choice,computer_choice):
-    # DETERMINE THE WINNER
+    # determine the winner logic
     outcome = ""
-    
     if user_choice == computer_choice: 
         outcome = "It's a tie!"
         # print("It's a tie!")

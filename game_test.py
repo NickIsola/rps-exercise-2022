@@ -1,8 +1,9 @@
-#AUTOMATED TESTING "game_test.py FILE
+# AUTOMATED TESTING "game_test.py FILE
 
+# IMPORT 'determine_winner' FUNCTION LOGIC FROM "game.py"
 from game import determine_winner
 
-
+# DEFINE FUNCTION FOR TESTING 
 def test_determination_of_the_winner():
 
     assert determine_winner("rock", "rock") == "It's a tie!"
